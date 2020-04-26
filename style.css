@@ -1,11 +1,21 @@
 body {
+    padding: 0px;
     cursor: crosshair;
 }
 
 text {
     color: black;
+    background: white;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    padding-right: 20px;
+}
+texti {
+    background: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: italic;
     padding-right: 20px;
 }
 
@@ -24,22 +34,26 @@ img {
 }
 
 li {
+    background: white;
     list-style: none
 }
 
 h1 {
+    
     font-family: 'Raleway', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     color: #33ffbb;
 }
 
 h2 {
+    background: white;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #33ffbb;
 }
 
 h3 {
+    background: white;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -53,7 +67,6 @@ h3 {
     position: relative;
     display: inline-block;
     cursor: crosshair;
-
 }
 
 .dropdown-content {
@@ -143,14 +156,14 @@ a:hover {
 
 
 .row {
-    margin-top: 120px;
     flex-direction: row;
     display: flex;
     flex-wrap: nowrap;
+    height: 80%;
 }
 
 .nav {
-    flex: 450px;
+    flex: 250px;
     padding: 0px;
     margin-top: 40px;
     margin-right: 40px;
@@ -159,13 +172,28 @@ a:hover {
 }
 
 .column {
+    position: relative;
+    left: 30%;
     flex-direction: column;
     float: left;
-    height: 500px;
+    height: 620px;
     overflow-y: scroll;
     width: 400px;
     margin-top: 60px;
-    padding: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+.column2 {
+    position:relative;
+    left: 30%;
+    flex-direction: column;
+    float: left;
+    height: 620px;
+    overflow-y: scroll;
+    width: 400px;
+    margin-top: 60px;
+    padding-right: 10px;
     margin-right: 20px;
 }
 
@@ -210,10 +238,17 @@ a:hover {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .row {
         flex-direction: row;
     }
-
+.column {
+    position: relative;
+    left: 10%;
+    }
+    .column2 {
+    position: relative;
+    left: 10%;
+    }
 
 }
