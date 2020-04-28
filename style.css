@@ -3,17 +3,21 @@ body {
     cursor: crosshair;
 }
 
+
+/*         TEXT         */
 text {
     color: black;
-    background: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Caladea';
     font-size: 12px;
+    line-height: 16px;
     padding-right: 20px;
 }
+
+
 texti {
     background: white;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Caladea';
     font-size: 12px;
     font-style: italic;
     padding-right: 20px;
@@ -21,39 +25,43 @@ texti {
 
 textTABS {
     color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15x;
+    font-family: 'Caladea';
+    font-size: 14x;
+    line-height: 18px;
     padding-right: 20px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    float: right;
-    padding-bottom: 20px;
-}
-
 li {
-    background: white;
+    text-align: right;
     list-style: none
 }
 
 h1 {
-    
+
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     color: #33ffbb;
 }
 
 h2 {
-    background: white;
+    background-color: transparent;
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #33ffbb;
 }
 
+h2:hover {
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    cursor: zoom-in;
+    font-size: 20px;
+    color: #33ffbb;
+}
+
+
 h3 {
     background: white;
+    line-height: 24px;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -62,70 +70,110 @@ h3 {
 }
 
 
-.dropdown {
-    float: right;
-    position: relative;
-    display: inline-block;
+
+
+
+
+/*         INTERACTIVE (CLICKABLE MENUS)        */
+
+
+.collapsible {
+    background-color: transparent;
+    color: black;
     cursor: crosshair;
+    padding: 0px;
+    border: none;
+    outline: none;
+    padding-bottom: 0px;
 }
 
-.dropdown-content {
-    /*  what appears  */
-    color: black;
+
+
+.content {
     display: none;
+    bottom: 50px;
+    padding-bottom: 16px;
     position: absolute;
-    left: 0px;
-    top: 30px;
-    height: 300px;
-    width: 200px;
-    cursor: crosshair;
+    background-color: white;
+    min-width: 350px;
+    z-index: 1;
 }
+
+
+
+
+.collapsibleBR {
+    color: black;
+        background-color: transparent;
+    cursor: crosshair;
+    padding: 0px;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+
+
+.contentBR {
+    display: none;
+    right:0px;
+    bottom: 20px;
+    padding-bottom: 16px;
+    position: absolute;
+    min-width: 350px;
+    
+}
+
+
+
+
+.collapsibleTR {
+    position: absolute;
+    text-align: left;
+    right: 0px;
+ background-color: transparent;
+    color: black;
+    cursor: crosshair;
+    border: none;
+    outline: none;
+}
+
+
+
+
+.contentTR {
+    background-color: transparent;
+    text-align: left;
+    display: none;
+    top: 50px;
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    min-width: 150px;
+}
+
+
+
+
+
+/*         IMAGE         */
+
+img {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding-bottom: 20px;
+}
+
+
+
+
+/*         INTERACTIVE (IMAGE and LINKS)        */
+
 
 .dropdown-contentIMG {
-    /*  what appears  */
     display: none;
     position: absolute;
-}
-
-.dropdown-contentR {
-    color: black;
-    text-align: right;
-    display: none;
-    position: absolute;
-    right: 0px;
-    top: 30px;
-    height: 40px;
-    width: 150px;
-    cursor: crosshair;
-}
-
-.dropdown-contentBL {
-    color: black;
-    display: none;
-    position: absolute;
-    left: 0px;
-    bottom: 50px;
-    width: 200px;
-    cursor: crosshair;
-}
-
-
-.dropdown:hover .dropdown-content {
-    /*  display */
-    display: block;
-    cursor: crosshair;
-}
-
-.dropdown:hover .dropdown-contentR {
-    color: black;
-    display: block;
-    cursor: crosshair;
-}
-
-.dropdown:hover .dropdown-contentBL {
-    color: black;
-    display: block;
-    cursor: crosshair;
+    padding-right: 10px;
 }
 
 .dropdown:hover .dropdown-contentIMG {
@@ -135,24 +183,50 @@ h3 {
     cursor: crosshair;
 }
 
+a.doc {
+    font-family: 'Roboto';
+    cursor: zoom-in;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+}
 
-a {
+a.doc:hover {
+    color: black;
+    cursor: zoom-in;
+    background: #33ffbb;
+    text-decoration: none;
+}
+
+
+a.tab {
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-size: 14x;
+    cursor: zoom-in;
+    font-weight: normal;
+    text-transform: lowercase;
     color: black;
     text-decoration: none;
 }
 
-a:link {
+a.tab:hover {
     color: black;
-}
-
-/* mouse over link */
-a:hover {
     cursor: zoom-in;
     background: #33ffbb;
+    text-decoration: none;
 }
 
 
 
+
+
+
+
+
+
+/*         LAYOUT        */
 
 
 .row {
@@ -185,7 +259,7 @@ a:hover {
 }
 
 .column2 {
-    position:relative;
+    position: relative;
     left: 30%;
     flex-direction: column;
     float: left;
@@ -206,7 +280,7 @@ a:hover {
 .topRight {
     margin 0;
     position: fixed;
-    top: 20px;
+    top: 25px;
     right: 20px;
     width: 0px;
 
@@ -221,16 +295,15 @@ a:hover {
 
 .bottomright {
     position: fixed;
-    bottom: 8px;
-    right: 16px;
-    font-size: 18px;
+    bottom: 16px;
+    right: 20px;
+    font-size: 14x;
 }
 
 .botleft {
     position: fixed;
-    bottom: 8px;
+    bottom: 10px;
     left: 16px;
-    font-size: 18px;
 }
 
 
@@ -242,13 +315,15 @@ a:hover {
     .row {
         flex-direction: row;
     }
-.column {
-    position: relative;
-    left: 10%;
+
+    .column {
+        position: relative;
+        left: 10%;
     }
+
     .column2 {
-    position: relative;
-    left: 10%;
+        position: relative;
+        left: 10%;
     }
 
 }
