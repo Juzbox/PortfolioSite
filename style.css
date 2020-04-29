@@ -94,6 +94,8 @@ h3 {
     bottom: 50px;
     padding-bottom: 16px;
     position: absolute;
+    max-height: 300px;
+    overflow-y: scroll;
     background-color: white;
     min-width: 350px;
     z-index: 1;
@@ -104,7 +106,7 @@ h3 {
 
 .collapsibleBR {
     color: black;
-        background-color: transparent;
+    background-color: transparent;
     cursor: crosshair;
     padding: 0px;
     border: none;
@@ -115,12 +117,12 @@ h3 {
 
 .contentBR {
     display: none;
-    right:0px;
+    right: 0px;
     bottom: 20px;
     padding-bottom: 16px;
     position: absolute;
     min-width: 350px;
-    
+
 }
 
 
@@ -130,7 +132,7 @@ h3 {
     position: absolute;
     text-align: left;
     right: 0px;
- background-color: transparent;
+    background-color: transparent;
     color: black;
     cursor: crosshair;
     border: none;
@@ -203,7 +205,7 @@ a.doc:hover {
 a.tab {
     line-height: 24px;
     font-family: 'Roboto';
-    font-size: 14x;
+    font-size: 18x;
     cursor: zoom-in;
     font-weight: normal;
     text-transform: lowercase;
@@ -233,7 +235,7 @@ a.tab:hover {
     flex-direction: row;
     display: flex;
     flex-wrap: nowrap;
-    height: 80%;
+    height: 90%;
 }
 
 .nav {
@@ -250,7 +252,8 @@ a.tab:hover {
     left: 30%;
     flex-direction: column;
     float: left;
-    height: 620px;
+    top: -5vh;
+    height: 92vh;
     overflow-y: scroll;
     width: 400px;
     margin-top: 60px;
@@ -263,7 +266,8 @@ a.tab:hover {
     left: 30%;
     flex-direction: column;
     float: left;
-    height: 620px;
+    top: -5vh;
+    height: 92vh;
     overflow-y: scroll;
     width: 400px;
     margin-top: 60px;
@@ -308,22 +312,20 @@ a.tab:hover {
 
 
 
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
 
-
-
-@media screen and (max-width: 700px) {
     .row {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .column {
         position: relative;
-        left: 10%;
+        height:40vh;
     }
 
     .column2 {
         position: relative;
-        left: 10%;
+        height:40vh;
     }
 
 }
