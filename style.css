@@ -319,13 +319,23 @@ a.tab:hover {
     }
 
     .column {
+        top: 5vh;
         position: relative;
         height:40vh;
     }
 
     .column2 {
+        top: 5vh;
         position: relative;
         height:40vh;
+    }
+    
+    .h2{
+        font-size: 24px;
+    }
+
+    .text{
+       font-size: 18px; 
     }
 
 }
