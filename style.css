@@ -315,6 +315,7 @@ a.tab:hover {
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
 
     .row {
+        top:20px;
         flex-direction: column;
     }
 
