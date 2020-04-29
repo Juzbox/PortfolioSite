@@ -321,21 +321,34 @@ a.tab:hover {
     .column {
         top: 5vh;
         position: relative;
-        height:40vh;
+        height: 40vh;
     }
 
     .column2 {
         top: 5vh;
         position: relative;
-        height:40vh;
+        height: 40vh;
     }
-    
-    .h2{
+
+    h2 {
         font-size: 24px;
     }
 
-    .text{
-       font-size: 18px; 
+    text {
+        font-size: 18px;
+    }
+
+    .bottomright {
+        position: fixed;
+        top: 95vh;
+        right: 20px;
+        font-size: 14x;
+    }
+
+    .botleft {
+        position: fixed;
+         top: 95vh;
+        left: 16px;
     }
 
 }
