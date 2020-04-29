@@ -234,7 +234,6 @@ a.tab:hover {
 .row {
     flex-direction: row;
     display: flex;
-    padding-top: 5vh;
     flex-wrap: nowrap;
     height: 90%;
 }
