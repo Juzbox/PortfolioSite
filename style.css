@@ -316,19 +316,18 @@ a.tab:hover {
 
     .row {
         top:20px;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .column {
         top: 20px;
         position: absolute;
-        height: 40vh;
+
     }
 
     .column2 {
         top: 20px;
         position: absolute;
-        height: 40vh;
     }
 
     h2 {
