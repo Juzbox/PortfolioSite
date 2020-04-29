@@ -234,7 +234,7 @@ a.tab:hover {
 .row {
     flex-direction: row;
     display: flex;
-    padding-top: 10vh;
+    padding-top: 5vh;
     flex-wrap: nowrap;
     height: 90%;
 }
@@ -254,7 +254,7 @@ a.tab:hover {
     flex-direction: column;
     float: left;
     top: -5vh;
-    height: 92vh;
+    height: 80vh;
     overflow-y: scroll;
     width: 400px;
     margin-top: 60px;
@@ -268,7 +268,7 @@ a.tab:hover {
     flex-direction: column;
     float: left;
     top: -5vh;
-    height: 92vh;
+    height: 80vh;
     overflow-y: scroll;
     width: 400px;
     margin-top: 60px;
