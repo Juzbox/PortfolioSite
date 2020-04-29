@@ -319,13 +319,13 @@ a.tab:hover {
     }
 
     .column {
-        top: 5vh;
+        top: 15vh;
         position: relative;
         height: 40vh;
     }
 
     .column2 {
-        top: 5vh;
+        top: 15vh;
         position: relative;
         height: 40vh;
     }
