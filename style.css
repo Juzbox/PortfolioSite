@@ -321,13 +321,13 @@ a.tab:hover {
 
     .column {
         top: 20px;
-        position: relative;
+        position: absolute;
         height: 40vh;
     }
 
     .column2 {
         top: 20px;
-        position: relative;
+        position: absolute;
         height: 40vh;
     }
 
