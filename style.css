@@ -36,12 +36,20 @@ li {
     list-style: none
 }
 
-h1 {
-
+a.h1 {
+text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     color: #33ffbb;
 }
+
+a.h1:hover {
+text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 65px;
+    color: #33ffbb;
+}
+
 
 h2 {
     background-color: transparent;
@@ -70,6 +78,25 @@ h3 {
 }
 
 
+h4 {
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #33ffbb;
+}
+
+h5 {
+    background-color: transparent;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-size: 18x;
+    cursor: zoom-in;
+    font-weight: normal;
+    text-transform: lowercase;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 
 
@@ -221,6 +248,25 @@ a.tab:hover {
 }
 
 
+a.key {
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-size: 18x;
+    cursor: zoom-in;
+    font-weight: normal;
+    text-transform: lowercase;
+    color: black;
+    text-decoration: none;
+}
+
+a.key:hover {
+    color: black;
+    cursor: crosshair;
+    background: transparent;
+    text-decoration: none;
+}
+
+
 
 
 
@@ -235,7 +281,7 @@ a.tab:hover {
     flex-direction: row;
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 2vh;
+    margin-top: 0px;
     height: 85%;
 }
 
@@ -257,6 +303,21 @@ a.tab:hover {
     height: 90vh;
     overflow-y: scroll;
     width: 400px;
+    margin-top: 60px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+
+.columnCentral {
+    position: relative;
+    left: 10%;
+    flex-direction: column;
+    float: left;
+    overflow-y:auto;
+    top: 120px;
+    height: 100%;
+    width: 25%;
     margin-top: 60px;
     padding-right: 10px;
     margin-right: 20px;
@@ -294,7 +355,7 @@ a.tab:hover {
 .topleft {
     width: 200px;
     position: fixed;
-    top: -10px;
+    top: 25px;
     left: 20px;
 }
 
@@ -311,23 +372,29 @@ a.tab:hover {
     left: 16px;
 }
 
+.botCenter {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+}
+
 
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
 
     .row {
-        top:20px;
+        top:10px;
         flex-direction: row;
     }
 
     .column {
-        padding-top: 20px;
+        padding-top: 5vh;
         position: absolute;
 
     }
 
     .column2 {
-          padding-top: 20px;
+          padding-top: 5vh;
         position: absolute;
     }
 
