@@ -250,6 +250,7 @@ a.tab:hover {
 
 a.key {
     line-height: 24px;
+    background: white;
     font-family: 'Roboto';
     font-size: 18x;
     cursor: zoom-in;
@@ -262,7 +263,7 @@ a.key {
 a.key:hover {
     color: black;
     cursor: crosshair;
-    background: transparent;
+    background: white;
     text-decoration: none;
 }
 
