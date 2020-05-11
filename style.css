@@ -10,9 +10,21 @@ text {
     font-family: 'Caladea';
     font-size: 12px;
     line-height: 16px;
-    padding-right: 20px;
+    padding-right: 0px;
+    background: white;
 }
 
+bold {
+    color: black;
+    font-family: 'Caladea';
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 16px;
+    background: white;
+
+
+
+}
 
 texti {
     background: white;
@@ -20,7 +32,20 @@ texti {
     font-family: 'Caladea';
     font-size: 12px;
     font-style: italic;
-    padding-right: 20px;
+}
+
+
+calloutR {
+    color: black;
+    font-family: 'Roboto';
+    padding: 0px;
+    margin: 0px;
+    position: inherit;
+    font-size: 12px;
+    right: -18vw;
+    background: #33ffbb;
+    bottom: 12vh;
+    z-index: 1;
 }
 
 textTABS {
@@ -37,17 +62,19 @@ li {
 }
 
 a.h1 {
-text-decoration: none;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 60px;
     color: #33ffbb;
+    z-index: 1;
 }
 
 a.h1:hover {
-text-decoration: none;
+    text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 65px;
     color: #33ffbb;
+    z-index: 1;
 }
 
 
@@ -86,18 +113,33 @@ h4 {
 }
 
 h5 {
-    background-color: transparent;
-    line-height: 24px;
+    background: white;
+    line-height: 18px;
     font-family: 'Roboto';
-    font-size: 18x;
-    cursor: zoom-in;
-    font-weight: normal;
+    font-size: 14px;
+    cursor: crosshair;
+    font-weight: 400;
     text-transform: lowercase;
     color: black;
+    padding-top: 0px;
+    margin-top: 0px;
     text-transform: uppercase;
-    text-decoration: none;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
+h6 {
+    background: white;
+    line-height: 35px;
+    color: black;
+    position: sticky;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    padding-top: 15vh;
+    margin-bottom: 18px;
+}
 
 
 
@@ -191,9 +233,24 @@ img {
     height: auto;
     float: right;
     padding-bottom: 20px;
+
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
 
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /*         INTERACTIVE (IMAGE and LINKS)        */
@@ -214,6 +271,7 @@ img {
 
 a.doc {
     font-family: 'Roboto';
+    font-size: 12px;
     cursor: zoom-in;
     font-weight: normal;
     text-transform: uppercase;
@@ -225,6 +283,7 @@ a.doc:hover {
     color: black;
     cursor: zoom-in;
     background: #33ffbb;
+    font-size: 12px;
     text-decoration: none;
 }
 
@@ -241,6 +300,25 @@ a.tab {
 }
 
 a.tab:hover {
+    color: black;
+    cursor: zoom-in;
+    background: #33ffbb;
+    text-decoration: none;
+}
+
+a.index {
+    
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Roboto';
+    font-size: 18x;
+    font-weight: 900;
+    cursor: zoom-in;
+    color: black;
+    text-decoration: none;
+}
+
+a.index:hover {
     color: black;
     cursor: zoom-in;
     background: #33ffbb;
@@ -279,43 +357,59 @@ a.key:hover {
 
 
 .row {
+    position: relative;
     flex-direction: row;
     display: flex;
+    background: transparent;
     flex-wrap: nowrap;
-    margin-top: 0px;
-    height: 85%;
+    margin: 0px;
+    height: 80%;
 }
 
-.nav {
-    flex: 250px;
-    padding: 0px;
-    margin-top: 10px;
-    margin-right: 40px;
-    margin-left: 20px;
-    height: inherit;
+.rowProj {
+    background: transparent;
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 20vh;
+
 }
+
 
 .column {
     position: relative;
-    left: 30%;
+    left: 30vw;
     flex-direction: column;
     float: left;
     top: 0px;
-    height: 90vh;
+    height: 95vh;
     overflow-y: scroll;
     width: 400px;
-    margin-top: 60px;
+    margin-top: 2vh;
     padding-right: 10px;
     margin-right: 20px;
 }
 
+.column2 {
+    position: relative;
+    left: 30vw;
+    flex-direction: column;
+    float: left;
+    top: 0px;
+    height: 95vh;
+    overflow-y: scroll;
+    width: 400px;
+    margin-top: 2vh;
+    padding-right: 10px;
+    margin-right: 20px;
+}
 
 .columnCentral {
     position: relative;
     left: 10%;
     flex-direction: column;
     float: left;
-    overflow-y:auto;
+    overflow-y: auto;
     top: 120px;
     height: 100%;
     width: 25%;
@@ -324,19 +418,72 @@ a.key:hover {
     margin-right: 20px;
 }
 
-.column2 {
-    position: relative;
-    left: 30%;
+
+
+.projectColumn {
+    position: absolute;
     flex-direction: column;
+    left: 20%;
+    width: 300px;
     float: left;
     top: 0px;
     height: 90vh;
-    overflow-y: scroll;
-    width: 400px;
-    margin-top: 60px;
-    padding-right: 10px;
+    margin-top: 40px;
+    padding-right: 20px;
+    margin-right: 20px;
+    z-index: 1;
+
+}
+
+.imageColumn {
+    position: inherit;
+    background: transparent;
+    left: 50%;
+    width: 40%;
+    float: left;
     margin-right: 20px;
 }
+
+
+.tempImg {
+
+    margin-top: 15vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+    position: relative;
+    height: 45vh;
+    width: 80%;
+    overflow-x: scroll;
+}
+
+.temp {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+
+.tempCaption {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    position: relative;
+    bottom: 40px;
+    right: -5%;
+    width: 170px;
+}
+
+.tempCaptionfull {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    position: relative;
+    bottom: -40px;
+    right: -55%;
+    width: 170px;
+}
+
 
 .rightbuffer {
     flex: 10%;
@@ -347,77 +494,157 @@ a.key:hover {
 .topRight {
     margin 0;
     position: fixed;
-    top: 25px;
+    top: 2vh;
     right: 20px;
     width: 0px;
 
 }
 
 .topleft {
-    width: 200px;
+    width: 20vw;
     position: fixed;
-    top: 25px;
-    left: 20px;
+    top: 2vh;
+    left: 2vw;
+}
+
+.infoTL {
+    width: 20vw;
+    position: fixed;
+    top: 25vh;
+    left: 2vw;
 }
 
 .bottomright {
     position: fixed;
-    bottom: 16px;
+    bottom: 2vh;
     right: 20px;
     font-size: 14x;
 }
 
 .botleft {
     position: fixed;
-    bottom: 10px;
-    left: 16px;
+    bottom: 0vh;
+    left: 2vw;
 }
 
 .botCenter {
+
+
     position: fixed;
-    bottom: 10px;
+    text-align: center;
+    bottom: 3vh;
+    transform: translate(-50%);
     left: 50%;
+    width: 400px;
+    
+}
+
+/*FLEX*/
+
+.flex-gridTop {
+    display: flex;
+    height: 2vh;
+    width: 100%;
+}
+
+.flex-grid {
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.flex-grid .col {
+    flex: 1;
+    padding-right: 50px;
+    min-width: 30%;
+}
+
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grid-thirds .col {
+    width: 32%;
 }
 
 
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
 
-    .row {
-        top:10px;
-        flex-direction: row;
+@media (max-width: 800px) {
+    .topleft {
+        width: 35%;
+        height: 25vh;
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
     }
 
+        .infoTL {
+        width: 95%;
+        height: 15vh;
+        overflow-y: auto;
+        position: fixed;
+        top: 25vh;
+        left: 2vw;
+    }
+    
     .column {
-        padding-top: 5vh;
-        position: absolute;
-
+        position: relative;
+        left: 2vw;
+        flex-direction: column;
+        float: left;
+        top: 40vh;
+        height: 50vh;
+        overflow-y: scroll;
+        width: 400px;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
     }
 
     .column2 {
-          padding-top: 5vh;
-        position: absolute;
+        position: relative;
+        left: 2vw;
+        flex-direction: column;
+        float: left;
+        top: 40vh;
+        height: 50vh;
+        overflow-y: scroll;
+        width: 400px;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
     }
 
-    h2 {
-        font-size: 24px;
+
+
+
+    .flex-grid {
+        display: flex;
+        flex-flow: column;
+
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
-    text {
-        font-size: 18px;
+    .tempCaption {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 20px;
+        right: -50%;
+        width: 150px;
     }
+    
+    img {
+    width: 100%;
+    height: auto;
+    float: right;
+    padding-top: 30px;
+        padding-bottom: 20px;
 
-    .bottomright {
-        position: fixed;
-        top: 95vh;
-        right: 20px;
-        font-size: 14x;
-    }
-
-    .botleft {
-        position: fixed;
-         top: 95vh;
-        left: 16px;
-    }
+}
 
 }
