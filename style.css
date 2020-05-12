@@ -573,7 +573,7 @@ a.key:hover {
 
 
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     
     .topleft {
         width: 35%;
@@ -646,8 +646,8 @@ a.key:hover {
         margin: 0px;
         padding: 0px;
         position: relative;
-        bottom: -130px;
-        left: -20%;
+        bottom: 30px;
+        left: -35%;
         width: 150px;
     }
 
@@ -667,7 +667,7 @@ a.key:hover {
     
     .infoTL {
     width: 20vw;
-        height: 25vh;
+        height: 35vh;
         overflow-y: scroll;
     position: fixed;
     top: 40vh;
