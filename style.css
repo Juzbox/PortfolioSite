@@ -516,109 +516,6 @@ a.key:hover {
 }
 
 
-/* Smartphones (landscape) ----------- */
-@media screen and (max-height:600px) and (orientation:landscape) {
-    /* Styles */
-
-        .infoSide {
-        width: 23vw;
-        position: absolute;
-        overflow-y: scroll;
-        height: 50vh;
-        top: 35vh;
-        left: 2vw;
-    }
-
-    .flex-grid {
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        padding-top: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-bottom: 15vh;
-    }
-
-    .tempCaptionfull {
-        margin: 0px;
-        padding: 0px;
-        height: 30px;
-        position: relative;
-        bottom: 20vh;
-        right: -75%;
-        width: 170px;
-    }
-
-    .tempCaption {
-        margin: 0px;
-        padding: 0px;
-        height: 30px;
-        position: relative;
-        bottom: 15vh;
-        right: -35%;
-        width: 170px;
-    }
-
-
-
-    .tempImg {
-
-        margin-top: 10vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
-
-        position: relative;
-        height: 45vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        width: 90%;
-        overflow-x: scroll;
-    }
-
-
-
-    .column {
-        position: relative;
-        left: 30vw;
-        flex-direction: column;
-        float: left;
-        top: 12vh;
-        height: 75vh;
-        overflow-y: scroll;
-        width: 30vw;
-        margin-top: 2vh;
-        padding-right: 10px;
-        margin-right: 20px;
-    }
-
-    .column2 {
-        position: relative;
-        left: 30vw;
-        flex-direction: column;
-        float: left;
-        top: 12vh;
-        height: 75vh;
-        overflow-y: scroll;
-        width: 30vw;
-        margin-top: 2vh;
-        padding-right: 10px;
-        margin-right: 20px;
-    }
-
-
-
-
-    .topleft {
-        width: 40vw;
-        position: fixed;
-        top: 4vh;
-        left: 2vw;
-    }
-
-
-
-}
-
 /* Smartphones (portrait) ----------- */
 @media screen and (orientation:portrait) {
     /*@media only screen and (max-width : 320px) {*/
@@ -869,3 +766,110 @@ a.key:hover {
         font-style: italic;
     }
 }
+
+
+
+
+/* Smartphones (landscape) ----------- */
+@media screen and (max-height:600px) and (orientation:landscape) {
+    /* Styles */
+
+        .infoSide {
+        width: 23vw;
+        position: absolute;
+        overflow-y: scroll;
+        height: 50vh;
+        top: 35vh;
+        left: 2vw;
+    }
+
+    .flex-grid {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 15vh;
+    }
+
+    .tempCaptionfull {
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        position: relative;
+        bottom: 20vh;
+        right: -75%;
+        width: 170px;
+    }
+
+    .tempCaption {
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        position: relative;
+        bottom: 15vh;
+        right: -35%;
+        width: 170px;
+    }
+
+
+
+    .tempImg {
+
+        margin-top: 10vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+
+        position: relative;
+        height: 45vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 90%;
+        overflow-x: scroll;
+    }
+
+
+
+    .column {
+        position: relative;
+        left: 30vw;
+        flex-direction: column;
+        float: left;
+        top: 12vh;
+        height: 75vh;
+        overflow-y: scroll;
+        width: 30vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+    .column2 {
+        position: relative;
+        left: 30vw;
+        flex-direction: column;
+        float: left;
+        top: 12vh;
+        height: 75vh;
+        overflow-y: scroll;
+        width: 30vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+
+
+
+    .topleft {
+        width: 40vw;
+        position: fixed;
+        top: 4vh;
+        left: 2vw;
+    }
+
+
+
+}
+
