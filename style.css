@@ -89,6 +89,8 @@ h2:hover {
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
     cursor: zoom-in;
+    z-index: 1;
+    padding: 5px;
     font-size: 20px;
     color: #33ffbb;
 }
@@ -177,7 +179,7 @@ h6 {
     color: black;
     background-color: transparent;
     cursor: crosshair;
-    padding: 0px;
+    padding: px;
     border: none;
     outline: none;
     z-index: 1;
@@ -187,8 +189,8 @@ h6 {
 .contentBR {
     display: none;
     right: 0px;
-    bottom: 20px;
-    padding-bottom: 16px;
+    bottom: 40px;
+    padding-bottom: 0px;
     position: absolute;
     min-width: 350px;
 
@@ -307,7 +309,7 @@ a.tab:hover {
 }
 
 a.index {
-    
+
     font-size: 16px;
     line-height: 24px;
     font-family: 'Roboto';
@@ -344,7 +346,6 @@ a.key:hover {
     background: white;
     text-decoration: none;
 }
-
 
 
 
@@ -536,7 +537,7 @@ a.key:hover {
     transform: translate(-50%);
     left: 50%;
     width: 400px;
-    
+
 }
 
 /*FLEX*/
@@ -572,33 +573,37 @@ a.key:hover {
 
 
 
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
+    
     .topleft {
         width: 35%;
-        height: 25vh;
+        height: 5vh;
         position: fixed;
         top: 2vh;
         left: 2vw;
     }
 
-        .infoTL {
-        width: 95%;
+    .infoTL {
+        display: none;
+/*
+        width: 50%;
         height: 15vh;
         overflow-y: auto;
         position: fixed;
-        top: 25vh;
-        left: 2vw;
+        top: 12vh;
+        right: 3vw;
+*/
     }
-    
+
     .column {
         position: relative;
-        left: 2vw;
+        left: 3vw;
         flex-direction: column;
         float: left;
-        top: 40vh;
-        height: 50vh;
+        top: 20vh;
+        height: 70vh;
         overflow-y: scroll;
-        width: 400px;
+        width: 45vw;
         margin-top: 2vh;
         padding-right: 10px;
         margin-right: 20px;
@@ -606,13 +611,13 @@ a.key:hover {
 
     .column2 {
         position: relative;
-        left: 2vw;
+        left: 3vw;
         flex-direction: column;
         float: left;
-        top: 40vh;
-        height: 50vh;
+        top: 20vh;
+        height: 70vh;
         overflow-y: scroll;
-        width: 400px;
+        width: 45vw;
         margin-top: 2vh;
         padding-right: 10px;
         margin-right: 20px;
@@ -624,27 +629,35 @@ a.key:hover {
     .flex-grid {
         display: flex;
         flex-flow: column;
-
-        padding-left: 5vw;
-        padding-right: 5vw;
+        width: 90% padding-left: 2vw;
+        padding-right: 2vw;
     }
 
+    .flex-grid .col {
+        position: relative;
+        right: 5vw;
+    flex: 1;
+    padding-right: 50px;
+    min-width: 30%;
+}
+    
+    
     .tempCaption {
         margin: 0px;
         padding: 0px;
         position: relative;
-        bottom: 20px;
-        right: -50%;
+        bottom: -130px;
+        left: -20%;
         width: 150px;
     }
-    
+
     img {
-    width: 100%;
-    height: auto;
-    float: right;
-    padding-top: 30px;
+        width: 100%;
+        height: auto;
+        float: right;
+        padding-top: 30px;
         padding-bottom: 20px;
 
-}
+    }
 
 }
