@@ -610,7 +610,17 @@ a.key:hover {
         left: 2vw;
     }
 
+ .infoTL {
+        display: none;
 
+        width: 50%;
+        height: 15vh;
+        overflow-y: auto;
+        position: fixed;
+        top: 12vh;
+        right: 3vw;
+
+    }
 
     .column {
         position: relative;
