@@ -585,7 +585,15 @@ a.key:hover {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
 /* Styles */
-        .infoTL {
+          .topleft {
+        width: 35%;
+        height: 5vh;
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+    }    
+    
+    .infoTL {
         display: none;
 /*
         width: 50%;
@@ -596,6 +604,77 @@ a.key:hover {
         right: 3vw;
 */
     }
+    
+    
+    .column {
+        position: relative;
+        left: 3vw;
+        flex-direction: column;
+        float: left;
+        top: 20vh;
+        height: 70vh;
+        overflow-y: scroll;
+        width: 45vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+    .column2 {
+        position: relative;
+        left: 3vw;
+        flex-direction: column;
+        float: left;
+        top: 20vh;
+        height: 70vh;
+        overflow-y: scroll;
+        width: 45vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+
+
+
+    .flex-grid {
+        display: flex;
+        flex-flow: column;
+        width: 90% padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .flex-grid .col {
+        position: relative;
+        right: 5vw;
+    flex: 1;
+    padding-right: 50px;
+    min-width: 30%;
+}
+    
+    
+    .tempCaption {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        bottom: 30px;
+        left: -35%;
+        width: 150px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        float: right;
+        padding-top: 30px;
+        padding-bottom: 20px;
+
+    }
+    
+    
+    
+    
+    
 }
 
 
@@ -611,7 +690,6 @@ a.key:hover {
     }
 
  .infoTL {
-        display: none;
 
         width: 50%;
         height: 15vh;
