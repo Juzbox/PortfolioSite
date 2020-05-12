@@ -517,7 +517,7 @@ a.key:hover {
 
 .bottomright {
     position: fixed;
-    bottom: 2vh;
+    bottom: 0vh;
     right: 20px;
     font-size: 14x;
 }
@@ -572,12 +572,19 @@ a.key:hover {
 }
 
 
+/* Desktops and laptops ----------- */
+/*@media only screen  and (min-width : 1224px) {
 
-@media only screen and (min-width: 800px), (min-height: 500px) {
-/*@media only screen and (min-device-width: 768px){*/
-  .flex-grid {
+}*/
+
+/* Smartphones (landscape) ----------- */
+@media screen and (orientation:landscape){
+/* Styles */
+
+.flex-grid {
+    width: 100%;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     padding-top: 10vh;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -589,9 +596,95 @@ a.key:hover {
     padding: 0px;
     height: 30px;
     position: relative;
-    bottom: 10%;
+    bottom: 15vh;
     right: -35%;
     width: 170px;
+}
+    
+    .infoTL {
+  width: 20vw;
+    position: fixed;
+    top: 38vh;
+        height: 50vh;
+        overflow-y: scroll;
+    left: 2vw;;
+}
+    
+    .column {
+    position: relative;
+    left: 30vw;
+    flex-direction: column;
+    float: left;
+    top: 12vh;
+    height: 75vh;
+    overflow-y: scroll;
+    width: 30vw;
+    margin-top: 2vh;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+.column2 {
+    position: relative;
+    left: 30vw;
+    flex-direction: column;
+    float: left;
+    top: 12vh;
+    height: 75vh;
+    overflow-y: scroll;
+    width: 30vw;
+    margin-top: 2vh;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+ .topleft {
+    width: 40vw;
+    position: fixed;
+    top: 4vh;
+    left: 2vw;
+}
+
+}
+
+
+
+/* Smartphones (portrait) ----------- */
+@media screen and (orientation:portrait){
+/*@media only screen and (max-width : 320px) {*/
+/* Styles */
+
+.flex-grid {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    padding-top: 10vh;
+    padding-left: 12vw;
+    padding-right: 10vw;
+}
+  
+    
+    .tempCaption {
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    position: relative;
+    bottom: 15vh;
+    right: -90%;
+    width: 200px;
+}
+    
+    calloutR {
+    color: black;
+    font-family: 'Roboto';
+    padding: 0px;
+    margin: 0px;
+    position: inherit;
+    font-size: 18px;
+        line-height: 24px;
+    right:0px;
+    background: #33ffbb;
+    bottom: 0px;
+    z-index: 1;
 }
     
     .infoTL {
@@ -600,7 +693,7 @@ display: none;
     
     .column {
     position: relative;
-    left: 3vw;
+    left: 8vw;
     flex-direction: column;
     float: left;
     top: 12vh;
@@ -614,7 +707,7 @@ display: none;
 
 .column2 {
     position: relative;
-    left: 5vw;
+    left: 8vw;
     flex-direction: column;
     float: left;
     top: 12vh;
@@ -628,26 +721,16 @@ display: none;
  .topleft {
     width: 40vw;
     position: fixed;
-    top: 4vh;
+    top: 2vh;
     left: 2vw;
 }
-    
-/*
-    a.h1 {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    color: #33ffbb;
-    z-index: 1;
+
+
 }
 
-a.h1:hover {
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-size: 28px;
-    color: #33ffbb;
-    z-index: 1;
-}
-*/
-    
-}
+
+
+
+
+
+
