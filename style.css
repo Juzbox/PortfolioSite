@@ -1,3 +1,4 @@
+
 body {
     padding: 0px;
     cursor: crosshair;
@@ -36,6 +37,8 @@ calloutR {
     z-index: 1;
 }
 
+
+
 textTABS {
     color: black;
     font-family: 'Caladea';
@@ -46,7 +49,7 @@ textTABS {
 
 li {
     text-align: right;
-    list-style: none
+    list-style: none;
 }
 
 a.h1 {
@@ -86,11 +89,11 @@ h2:hover {
 
 h3 {
     background: white;
-    line-height: 24px;
+    line-height: 28px;
     color: black;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 18px;
     padding-right: 20px;
 }
 
@@ -243,6 +246,7 @@ img {
 }
 
 
+
 /*         INTERACTIVE (IMAGE and LINKS)        */
 
 
@@ -299,9 +303,9 @@ a.tab:hover {
 a.index {
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
     font-family: 'Roboto';
-    font-size: 18x;
+    font-size: 18px;
     font-weight: 900;
     cursor: zoom-in;
     color: black;
@@ -393,9 +397,7 @@ a.key:hover {
     margin-right: 20px;
 }
 
-.titles {
-    width: 100%
-}
+
 
 
 .tempImg {
@@ -438,11 +440,7 @@ a.key:hover {
 }
 
 
-.rightbuffer {
-    flex: 10%;
-    margin-top: 50px;
-    margin-right: 20px;
-}
+
 
 .topRight {
     margin 0;
@@ -460,12 +458,7 @@ a.key:hover {
     left: 2vw;
 }
 
-.infoTL {
-    width: 20vw;
-    position: fixed;
-    top: 25vh;
-    left: 2vw;
-}
+
 
 .bottomright {
     position: fixed;
@@ -481,8 +474,6 @@ a.key:hover {
 }
 
 .botCenter {
-
-
     position: fixed;
     text-align: center;
     bottom: 3vh;
@@ -493,6 +484,7 @@ a.key:hover {
 }
 
 /*FLEX*/
+
 
 .flex-gridTop {
     display: flex;
@@ -516,16 +508,126 @@ a.key:hover {
 }
 
 
-.flex-grid .row {
-    flex-basis width: 100%;
+.infoSide {
+    width: 20vw;
+    position: fixed;
+    top: 30vh;
+    left: 2vw;
 }
 
 
+/* Smartphones (landscape) ----------- */
+@media screen and (max-height:600px) and (orientation:landscape) {
+    /* Styles */
+
+        .infoSide {
+        width: 23vw;
+        position: absolute;
+        overflow-y: scroll;
+        height: 50vh;
+        top: 35vh;
+        left: 2vw;
+    }
+
+    .flex-grid {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 15vh;
+    }
+
+    .tempCaptionfull {
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        position: relative;
+        bottom: 20vh;
+        right: -75%;
+        width: 170px;
+    }
+
+    .tempCaption {
+        margin: 0px;
+        padding: 0px;
+        height: 30px;
+        position: relative;
+        bottom: 15vh;
+        right: -35%;
+        width: 170px;
+    }
+
+
+
+    .tempImg {
+
+        margin-top: 10vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+
+        position: relative;
+        height: 45vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 90%;
+        overflow-x: scroll;
+    }
+
+
+
+    .column {
+        position: relative;
+        left: 30vw;
+        flex-direction: column;
+        float: left;
+        top: 12vh;
+        height: 75vh;
+        overflow-y: scroll;
+        width: 30vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+    .column2 {
+        position: relative;
+        left: 30vw;
+        flex-direction: column;
+        float: left;
+        top: 12vh;
+        height: 75vh;
+        overflow-y: scroll;
+        width: 30vw;
+        margin-top: 2vh;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+
+
+
+    .topleft {
+        width: 40vw;
+        position: fixed;
+        top: 4vh;
+        left: 2vw;
+    }
+
+
+
+}
 
 /* Smartphones (portrait) ----------- */
 @media screen and (orientation:portrait) {
     /*@media only screen and (max-width : 320px) {*/
     /* Styles */
+
+
+    .infoSide {
+        display: none;
+    }
 
     .flex-grid .col {
         flex: 1;
@@ -539,6 +641,8 @@ a.key:hover {
         padding-bottom: 50px;
         min-width: 30%;
     }
+
+
 
     a.doc {
         font-family: 'Roboto';
@@ -623,16 +727,28 @@ a.key:hover {
         font-size: 32px;
         color: #33ffbb;
     }
-    
+
     h3 {
-    background: white;
-    line-height: 24px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 36px;
-    padding-right: 20px;
-}
+        background: white;
+        line-height: 32px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        padding-right: 20px;
+    }
+
+    a.index {
+
+        font-size: 16px;
+        line-height: 32px;
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 900;
+        cursor: zoom-in;
+        color: black;
+        text-decoration: none;
+    }
 
     h5 {
         background: white;
@@ -699,9 +815,7 @@ a.key:hover {
         z-index: 1;
     }
 
-    .infoTL {
-        display: none;
-    }
+
 
     .column {
         position: relative;
@@ -754,99 +868,4 @@ a.key:hover {
         font-size: 16px;
         font-style: italic;
     }
-}
-
-/* Smartphones (landscape) ----------- */
-@media screen and (orientation:landscape) and (max-width:600) {
-    /* Styles */
-
-    .flex-grid {
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        padding-top: 10vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-        padding-bottom: 15vh;
-    }
-
-    .tempCaptionfull {
-        margin: 0px;
-        padding: 0px;
-        height: 30px;
-        position: relative;
-        bottom: 20vh;
-        right: -75%;
-        width: 170px;
-    }
-
-    .tempCaption {
-        margin: 0px;
-        padding: 0px;
-        height: 30px;
-        position: relative;
-        bottom: 15vh;
-        right: -35%;
-        width: 170px;
-    }
-
-    .infoTL {
-        width: 20vw;
-        position: fixed;
-        top: 38vh;
-        height: 50vh;
-        overflow-y: scroll;
-        left: 2vw;
-        ;
-    }
-
-    .tempImg {
-
-        margin-top: 10vh;
-        margin-right: 10vw;
-        margin-left: 10vw;
-
-        position: relative;
-        height: 45vh;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        width: 90%;
-        overflow-x: scroll;
-    }
-
-    .column {
-        position: relative;
-        left: 30vw;
-        flex-direction: column;
-        float: left;
-        top: 12vh;
-        height: 75vh;
-        overflow-y: scroll;
-        width: 30vw;
-        margin-top: 2vh;
-        padding-right: 10px;
-        margin-right: 20px;
-    }
-
-    .column2 {
-        position: relative;
-        left: 30vw;
-        flex-direction: column;
-        float: left;
-        top: 12vh;
-        height: 75vh;
-        overflow-y: scroll;
-        width: 30vw;
-        margin-top: 2vh;
-        padding-right: 10px;
-        margin-right: 20px;
-    }
-
-    .topleft {
-        width: 40vw;
-        position: fixed;
-        top: 4vh;
-        left: 2vw;
-    }
-
 }
