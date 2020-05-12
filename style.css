@@ -661,3 +661,17 @@ a.key:hover {
     }
 
 }
+
+
+@media screen and (max-height: 550px) {
+    
+    .infoTL {
+    width: 20vw;
+        height: 25vh;
+        overflow-y: scroll;
+    position: fixed;
+    top: 40vh;
+    left: 2vw;
+}
+    
+}
