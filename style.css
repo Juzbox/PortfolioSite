@@ -37,6 +37,19 @@ calloutR {
     z-index: 1;
 }
 
+calloutL {
+    color: black;
+    font-family: 'Roboto';
+    padding: 0px;
+    margin: 0px;
+    position: inherit;
+    font-size: 12px;
+    right: -45vw;
+    background: #33ffbb;
+    bottom: 32vh;
+    z-index: 1;
+}
+
 
 
 textTABS {
