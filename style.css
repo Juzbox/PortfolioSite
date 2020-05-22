@@ -37,6 +37,14 @@ calloutR {
     z-index: 1;
 }
 
+callout {
+    color: black;
+    font-family: 'Roboto';
+    font-size: 12px;
+    background: #33ffbb;
+}
+
+
 calloutL {
     color: black;
     font-family: 'Roboto';
@@ -143,6 +151,18 @@ h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 24px;
+    padding-top: 0vh;
+    margin-bottom: 18px;
+}
+
+h7 {
+    background: white;
+    line-height: 35px;
+    color: #33ffbb;
+    position: sticky;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 300px;
     padding-top: 0vh;
     margin-bottom: 18px;
 }
@@ -411,7 +431,17 @@ a.key:hover {
 }
 
 
-
+.fullXscroll {
+        position: relative;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    height: 80vh;
+    width: 90vw;
+    overflow-x: scroll;
+    overflow-y: auto;
+}
 
 .tempImg {
 
@@ -442,6 +472,14 @@ a.key:hover {
     width: 170px;
 }
 
+.scrollCaption { 
+    position: inherit;
+    z-index: 1;
+    top: 10vh;
+    left: 2vw;
+    width:20vw;
+}
+
 .tempCaptionfull {
     margin: 0px;
     padding: 0px;
@@ -449,7 +487,7 @@ a.key:hover {
     position: relative;
     bottom: -40px;
     right: -55%;
-    width: 170px;
+    width: 200px;
 }
 
 
@@ -511,6 +549,15 @@ a.key:hover {
     padding-top: 10vh;
     padding-left: 20vw;
     padding-right: 20vw;
+    padding-bottom: 5vh;
+}
+
+.flex-grid-noPad {
+    display: flex;
+    flex-flow: row;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
     padding-bottom: 5vh;
 }
 
