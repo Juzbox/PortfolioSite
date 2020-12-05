@@ -180,7 +180,17 @@ h7 {
     margin-bottom: 18px;
 }
 
-
+h8 {
+    background: white;
+    line-height: 35px;
+    color: black;
+position: sticky;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    padding-top: 0vh;
+    margin-bottom: 18px;
+}
 
 /*         INTERACTIVE (CLICKABLE MENUS)        */
 
@@ -473,8 +483,10 @@ a.key:hover {
 }
 
 .temp {
+/*
     margin: 0px;
     padding: 0px;
+*/
     position: relative;
     width: 100%;
 }
@@ -580,6 +592,12 @@ a.key:hover {
 .flex-grid .col {
     flex: 1;
     padding-right: 50px;
+    min-width: 30%;
+}
+
+.flex-grid .colCenter {
+    flex: 1;
+    align-content: center;
     min-width: 30%;
 }
 
@@ -774,6 +792,8 @@ a.key:hover {
         padding-top: 5vh;
         margin-bottom: 18px;
     }
+    
+ 
     
 
 
