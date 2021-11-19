@@ -625,16 +625,16 @@ a.key:hover {
 .flex-grid-main .col {
     flex: 1;
     padding-right: 50px;
-    min-width: 30%;
+    width: 20%;
 }
 
 .flex-grid-main .colscroll {
     flex: 1;
-    height: 70vh;
+    height: 60vh;
     overflow-y: scroll;
     padding-right: 50px;
     min-width: 30%;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 .flex-grid .colCenter {

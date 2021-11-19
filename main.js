@@ -11,7 +11,7 @@ var word3;
 var s;
 
 function preload() {
-  data = loadTable('assets/conceptgen.csv', 'csv' , 'header');
+  data = loadTable('portfolioQuestions.csv', 'csv' , 'header');
 }
 
 function setup() {
