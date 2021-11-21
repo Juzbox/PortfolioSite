@@ -25,6 +25,7 @@
         gtag('config', 'UA-48901953-2');
 
     </script>
+    
 
 
 
@@ -41,12 +42,13 @@
         <h1>HUGO PILATE</h1>
             <textTABS>
 <!--                <h2>HUGO PILATE</h2>-->
-                <h4></h4>Freelance service designer and program manager specialized in the creation of participatory experiences.<br>  
+                Freelance service designer and program manager specialized in the creation of participatory experiences.<br>  
                 <br>— urban pedagogy
             <br>— digital storytelling
-            <br>— alternative futures</textTABS>
-      <br><br>
-            
+            <br>— alternative futures
+            <br>— UX design & research</textTABS>
+      <br><br><br><br><br><br>_<br>
+           
         
             </div>
         
@@ -54,9 +56,11 @@
            <text>
 <!--            <h4>BIO</h4><br>-->
                Industrial designer by training, I have kept a strong appreciation for all things making (physically and digitally), especially the making of prototypes and other hands-on sense-making processes.
+               
                <br><br>
-                    Most recently I have had the honor to facilitate collaborative troubleshooting workshops for the <a class="doc" href="https://juzbox.github.io/CID_Microsite/">Kennis Maken in The Hague</a>, to manage the Fast Forward program at <a class="doc"  href="https://place.network/fast-forward">PLACE Network</a>, to prototype alternative worlds in video-games with the <a class="doc"  href="http://banlieueduturfu.xyz/">Banlieue du TURFU</a>, and use design practices to build creative communities like <a class="doc" href="https://hugopilate.medium.com/a-journey-through-hel-a82dd8340b28">Haul Earth Ledger</a>, <a class="doc"  href="https://juzbox.github.io/DigikatMicrosite/">Digikat</a>, <a class="doc"  href="https://vimeo.com/374354320?embedded=true&source=video_title&owner=5375011">Museomix Delhi</a>, <a class="doc"  href="https://gaite-lyrique.net/evenement/agoravers">Agoraverse</a>, and <a class="doc"  href="https://discord.gg/5BB79Q7Nk3">Cyberlocal Strategies</a>.  
-            <br><br>
+                    Most recently I have had the honor to facilitate collaborative troubleshooting workshops for the <a class="doc" href="https://juzbox.github.io/CID_Microsite/" target="_blank">Kennis Maken in The Hague</a>, to manage the Fast Forward program at <a class="doc"  href="https://place.network/fast-forward">PLACE Network</a>, to prototype alternative worlds in video-games with the <a class="doc"  href="http://banlieueduturfu.xyz/">Banlieue du TURFU</a>, and use design practices to build creative communities like <a class="doc" href="https://hugopilate.medium.com/a-journey-through-hel-a82dd8340b28">Haul Earth Ledger</a>, <a class="doc"  href="https://juzbox.github.io/DigikatMicrosite/" target="_blank">Digikat</a>, <a class="doc"  href="https://vimeo.com/374354320?embedded=true&source=video_title&owner=5375011" target="_blank">Museomix Delhi</a>, <a class="doc"  href="https://gaite-lyrique.net/evenement/agoravers" target="_blank">Agoraverse</a>, and <a class="doc"  href="https://discord.gg/5BB79Q7Nk3" target="_blank">Cyberlocal Strategies</a>.  
+            <br><br> You can also got to my <a class="doc" href="scrollfolio.html" style="text-transform: uppercase" >PROJECT ARCHIVE</a> to see more projects.<br><Br>
+            
             
             I am grateful to have been able to sit at so many different tables as each of these projects inform each other.  
                
@@ -127,7 +131,7 @@
 <div class="bottomright">
     <a class="tab" href="scrollfolio.html" style="text-transform: uppercase">
 <!--                <h2>🌿</h2>-->
-        <h2>📜</h2>
+        <h2> 📜</h2>
             </a>
     </div>
     
@@ -190,7 +194,35 @@
 </script>
 
 
+<script>
+    
+    let img;
+    let mouseStart =-30;
+    
+function preload() {
+  img = loadImage('assets/yes.png');
+}
+    
+function windowResized() {
+  //console.log('resized');
+  resizeCanvas(windowWidth, windowHeight);
+}
 
+function setup() {
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
+ 
+  //background(175);
+}
+// Move the mouse across the canvas
+function draw() {
+  //background(244, 248, 252);
+    textSize(30);
+    text("🌿",mouseX-mouseStart-random(15),mouseY+mouseStart-random(15),60,60);
+ //image(img,mouseX,mouseY,400,400);
+}
+    </script>
 
 
 <html>
