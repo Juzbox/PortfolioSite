@@ -43,11 +43,13 @@ canvas{
 
 h1 {
     color: var(--accentColor);
+  text-shadow: 2px 2px #00000020;
     font-weight: bold;
     line-height: 1em;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
-    font-size: 1em;
+    font-size: 3em;
+    padding-top: 20px;
     padding-right: 20px;
     text-align: left;
 /*    text-shadow: 0px 0px 7px rgba(107,107,169, 0.3);*/
