@@ -12,7 +12,7 @@ body {
 }
 
 .bodycopy{
-    
+
     display: inline-block;
 }
 
@@ -691,7 +691,7 @@ a.key:hover {
         color: black;
         text-decoration: underline;
     }
-    
+
 
 
 
@@ -718,7 +718,7 @@ a.key:hover {
         padding-left: 20vw;
         padding-right: 20vw;
     }
-    
+
      .flex-grid-main {
         display: flex;
         width: 100%;
@@ -728,7 +728,7 @@ a.key:hover {
         padding-right: 20vw;
     }
 
-    
+
         .flex-grid-noPad {
     display:flex;
     flex-flow: row;
@@ -736,8 +736,8 @@ a.key:hover {
             margin-bottom: 20vh;
             width: 90vw;
 }
-   
-    
+
+
     .fullXscroll {
     position: relative;
     flex-direction: row;
@@ -768,7 +768,7 @@ a.key:hover {
 
     textTABS {
         color: black;
-       
+
         font-family: 'Caladea';
         font-size: 32px;
         line-height: 42px;
@@ -850,9 +850,9 @@ a.key:hover {
         padding-top: 5vh;
         margin-bottom: 18px;
     }
-    
- 
-    
+
+
+
 
 
     .tempCaptionfull {
@@ -979,7 +979,7 @@ a.key:hover {
         padding-bottom: 15vh;
     }
 
-    
+
     .flex-grid-noPad {
     display: flex;
     flex-flow: row;
@@ -988,8 +988,8 @@ a.key:hover {
     padding-right: 2vw;
     padding-bottom: 20vh;
 }
-   
-    
+
+
     .fullXscroll {
     position: relative;
     flex-direction: row;
@@ -1001,7 +1001,7 @@ a.key:hover {
     overflow-x: scroll;
     overflow-y: auto;
 }
-    
+
     .tempCaptionfull {
         margin: 0px;
         padding: 0px;
@@ -1029,8 +1029,8 @@ a.key:hover {
     left: 2vw;
     width: 30vw;
 }
-    
-    
+
+
 
     .tempImg {
 
